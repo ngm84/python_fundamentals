@@ -40,3 +40,34 @@ def newList(thisList):
 z = [19,2,54,-2,7,12,98,32,10,-3,6]
 newList(z)
 
+## Assignment: Multiples, Sum, Average
+
+def multiplesI():
+	for num in range(1, 1000):
+		if num % 2 != 0:
+			print num
+
+def multiplesII():
+	for num in range(5, 1000000):
+		if num % 5 == 0:
+			print num
+
+def sumList(listy):
+	sum = 0;
+	for i in listy:
+		if type(i) == int:
+			sum += i
+	print sum
+
+x = [1, 2, 5, 10, 255, 3]
+sumList(x)
+
+def averageList(listo):
+	sum = 0;
+	for i in listo:
+		if type(i) == int:
+			sum += i
+	print sum / len(listo)
+
+a = [1, 2, 5, 10, 255, 3]
+averageList(a)
